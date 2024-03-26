@@ -1,4 +1,4 @@
 export const siteConfig = {
-  name: "Taskify",
-  description: "Collabrate, manage projects, and reach new productivity peaks",
+  name: "Woowii",
+  description: "La Revolucion de los procesos de seleccion empresarial a comenzado",
 }

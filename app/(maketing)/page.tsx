@@ -1,10 +1,13 @@
-import { Button } from "@/components/ui/button";
 
-import { cn } from "@/lib/utils";
+import Formulario from "@/components/ui/formulario";
+import { Model1 } from "@/components/ui/model1";
+import { Model2 } from "@/components/ui/model2";
+import { Model3 } from "@/components/ui/model3";
+import { Model4 } from "@/components/ui/model4";
+import { Model5 } from "@/components/ui/model5";
+import { Model6 } from "@/components/ui/model6";
+import { Model7 } from "@/components/ui/model7";
 
-import { Medal } from "lucide-react";
-
-import Link from "next/link";
 
 import localFont from "next/font/local";
 
@@ -16,31 +19,44 @@ const MarketingPage = () => {
   return(
 
     <div
-      className="flex items-center justify-center flex-col
+      className="flex items-center justify-center flex-col 
     ">
-      <div className={cn("flex items-center justify-center flex-col",
-        headingFont.className   
-      )}>
-        <div className="mb-4 flex items-center border shadow-sm p-4
-        bg-cyan-400 text-blue-600 rounded-full uppercase">
-          <Medal className="h-6 w-6 mr-2"/>
-          No 1 Task managment
+      <div >
+       
+        <Model1/>
+        <Model2/>
+        <div className="flex items-center justify-center flex-col ">
+          <h1 className="text-black text-2xl font-extrabold ">Apuntate a la waiting list</h1>
+        <br/>
+        <button className="button
+                rounded-full
+                p-5
+                bg-lime-500
+                text-black
+                font-bold
+                flex
+                items-center
+                hover:bg-lime-300">
+            <a href="#register"> WOOWIZATE</a>
+
+        </button>
+        <br/>
+        <h2 className="text-black text-2xl font-extrabold">www.woowii.hr.com</h2>
         </div>
-        <h1 className="text-3xl md:text-6xl text-center text-neutral-800 mb-6 ">
-          Taskify helps Team move
-        </h1>
-        <div className="text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white px-4 p-2 rounded-md pb-4 w-fit">
-          work forward.
-        </div>
+        <Model3/>
+        <Model4/>
+        <Model7/>
+       <section id="register" className="bg-white relative flex items-start justify-start flex-col">
+        <div className="flex items-center justify-center">
+        <Model5/>
+        <Formulario/>
+        
+        
+        
+        </div>    
+       </section>
+       <Model6/>
       </div>
-      <div className="text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto">
-        Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office, the way your team works is unique - accomplish it all with Taskify.
-      </div>
-      <Button className="mt-6" size="lg" asChild>
-        <Link href="/sign-up">
-          Get Taskify for Free
-        </Link>
-      </Button>
     </div>
   )
 }

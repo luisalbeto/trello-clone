@@ -7,14 +7,15 @@ const MarketingLayout = ({
   children: React.ReactNode;
 }) => {
   return(
-    <div className="h-full bg-slate-100">
+    <div className="h-full ">
       <Navbar/>
      <main 
-      className="pt-40 pb-20 bg-slate-100
+      className="pt-10 pb-5 bg-white
         ">
        {children}
+       <Footer/>
      </main>
-     <Footer/>
+ 
     </div>
   )
 }
